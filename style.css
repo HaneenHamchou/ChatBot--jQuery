@@ -1,0 +1,56 @@
+*,*::before,*::after {
+box-sizing: border-box;
+}
+body{
+margin: 0;
+font-family: arial; I
+background: grey;
+font-size: 20px;
+font-weight: 400;
+Line-height: 1.6;
+color: #333333;
+}
+h1{
+	align-content: center;
+	color: steelblue;
+}
+
+img{
+max-width: 25%;
+color: darkblue;
+}
+body, html{
+scroll-behavior: smooth;
+align-content: center;
+}
+.chat_icon{
+	position: fixed;
+	right: 30px;
+	bottom: 0;
+	font-size: 80px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 1000;
+}
+.chat_box{
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	width: 480px;
+	height: 80vh;
+	background: #dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+.hidden{
+	display: none !important;
+}
+.conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: nine;
+}
